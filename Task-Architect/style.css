@@ -1,32 +1,35 @@
-body{
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
 }
-header{
+
+header {
     background-color: white;
     height: 60px;
     position: sticky;
     top: 0;
     width: 100%;
 }
-header h1{
+
+header h1 {
     font-size: 20px;
     font-weight: lighter;
     padding: 5px 16px;
     /* margin: 20px; */
 }
 
-header h1:hover{
+header h1:hover {
     background-color: rgb(221, 218, 218);
 }
-.navbar{ 
+
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 16px; 
-} 
+    padding: 0px 16px;
+}
 
-.navbar a{
+.navbar a {
     margin-left: 20px;
     font-weight: 600;
     color: black;
@@ -39,66 +42,81 @@ header h1:hover{
     transition: 0.3s;
 
 }
-.navbar a:hover{
-    background-color: rgb(221, 218, 218);;
+
+.navbar a:hover {
+    background-color: rgb(221, 218, 218);
+    ;
     padding: 5px;
     color: black;
 }
 
-.hero{
+.hero {
     background-image: url("https://www.w3schools.com/w3images/architect.jpg");
     background-size: cover;
     background-position: center;
     height: 95vh;
 
-    display: flex;         
+    display: flex;
     justify-content: center;
     align-items: center;
 
     color: white;
     font-size: 20px;
 }
-.hero h1{
+
+.hero h1 {
     background-color: rgba(50, 51, 51, 0.867);
     padding: 20px;
 
 }
- .projects {
+
+.projects {
     margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
     gap: 1em;
 }
-#about .about-container{
-    display: flex;
-    grid-template-columns: repeat(4, 1fr);
+
+
+
+
+#about .about-container {
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1em;
 }
-#about .about-container input{
+
+#about .about-container input {
     width: 100%;
     padding: 12px;
     border: 1px solid rgb(221, 218, 218);
     font-size: 20px;
 }
-#about .about-container input:hover{
+
+#about .about-container input:hover {
     cursor: pointer;
     border-width: 1px;
     background-color: rgb(221, 218, 218);
 }
 
-h3{
+h3 {
     font-size: 25px;
     font-weight: lighter;
     margin-left: 25px;
     padding-top: 32px;
     padding-bottom: 32px;
 }
-h4{
+
+h4 {
     font-size: 20px;
     font-weight: lighter;
     margin-left: 25px;
 }
-p{
+
+p {
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
@@ -106,18 +124,19 @@ p{
     padding-right: 30px;
 }
 
-
 form {
     margin: 0 auto;
 }
-form input{
+
+form input {
     width: 95%;
     margin-bottom: 25px;
     padding: 18px;
     border: 1px solid rgb(221, 218, 218);
     border-width: 1px;
 }
-.message-btn{
+
+.message-btn {
     width: 200px;
     font-size: 20px;
     background-color: black;
@@ -126,14 +145,39 @@ form input{
     cursor: pointer;
     transition: 0.3s;
 }
-img{
+
+img {
     width: 100%;
     height: auto;
 }
-footer{
+
+footer {
     background-color: black;
     color: white;
     text-align: center;
     padding: 8px;
 }
 
+
+
+/* 
+@media (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+}
+
+@media (max-width: 425px) {
+
+    .projects {
+        grid-template-columns: 1fr 1fr;
+    }
+} */
+
+@media (max-width: 768px) {
+    .navbar div {
+        display: none;
+    }
+}
