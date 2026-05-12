@@ -17,6 +17,9 @@ header h1 {
     padding: 5px 16px;
     /* margin: 20px; */
 }
+header  h1 b{
+    font-weight: bold;
+}
 
 header h1:hover {
     background-color: rgb(221, 218, 218);
@@ -50,6 +53,8 @@ header h1:hover {
     color: black;
 }
 
+/* hero section */
+
 .hero {
     background-image: url("https://www.w3schools.com/w3images/architect.jpg");
     background-size: cover;
@@ -70,17 +75,18 @@ header h1:hover {
 
 }
 
+/* projects section */
+
 .projects {
     margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
+        /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     gap: 1em;
 }
 
 
-
+/* About section */
 
 #about .about-container {
     display: grid;
@@ -124,6 +130,8 @@ p {
     padding-right: 30px;
 }
 
+/* Contact section  */
+
 form {
     margin: 0 auto;
 }
@@ -151,6 +159,8 @@ img {
     height: auto;
 }
 
+/* Footer section */
+
 footer {
     background-color: black;
     color: white;
@@ -158,9 +168,13 @@ footer {
     padding: 8px;
 }
 
+footer a{
+    color: yellow;
+}
 
 
-/* 
+
+
 @media (max-width: 768px) {
     .projects {
         grid-template-columns: 1fr 1fr 1fr;
@@ -174,7 +188,7 @@ footer {
     .projects {
         grid-template-columns: 1fr 1fr;
     }
-} */
+}
 
 @media (max-width: 768px) {
     .navbar div {
